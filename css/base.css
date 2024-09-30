@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap");
 @import url("../assets/font-awesome/css/fontawesome-all.css");
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
 	line-height: 1.15; 
 	-webkit-text-size-adjust: 100%;
@@ -9,7 +13,6 @@ html {
 
 body {
 	margin: 0;
-	user-select: none
 }
 
 section {
