@@ -922,7 +922,7 @@ select:-webkit-autofill:focus {
 .intro-content {
   height: 100%;
   max-width: 1500px;
-  padding-top: 20vh;
+  padding-top: 5vh;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
