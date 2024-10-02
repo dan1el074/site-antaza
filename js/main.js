@@ -269,9 +269,24 @@
         ssPhotoswipe();
         ssSlickSlider();
         ssSmoothScroll();
-        ssAlertBoxes();
         ssAOS();
 
     })();
 
 })(jQuery);
+
+function fakeSend() {
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const message = document.getElementById('message');
+
+    if(name.value && email.value && phone.value && message.value) {
+        event.preventDefault();
+        alert('Mensagem enviada com sucesso!');
+        name.value = '';
+        email.value = '';
+        phone.value = '';
+        message.value = '';
+    }
+}

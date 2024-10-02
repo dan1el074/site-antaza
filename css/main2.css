@@ -27,7 +27,7 @@
 }
 
 .btn-whatsapp-pulse-border {
-  z-index: 999;
+  z-index: 400;
   bottom: 25px;
   left: 25px;
   animation-play-state: paused;
@@ -277,8 +277,8 @@ p img {
 
 p.lead {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 2.4rem;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 3.6rem;
   color: #000000;
@@ -1071,15 +1071,6 @@ select:-webkit-autofill:focus {
  * intro ////////////// */
 
 @media screen and (max-width:1080px) {
-  .fix-form {
-    flex-direction: column !important;
-    gap: 0 !important;
-  }
-
-  .contact form input {
-    width: 100% !important;
-  }
-
   .contact form button {
     margin-top: 30px;
   }
@@ -1683,69 +1674,97 @@ select:-webkit-autofill:focus {
 
 
 /* ////////////// contact ////////////// */
+.contact-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-image: url("../assets/contact-dots.png");
+  background-size: cover;
+}
+
 .contact {
-  padding-bottom: 8rem;
-  width: 89%;
-  max-width: 1200px;
+  width: 38%;
+  margin-right: 12%;
+  padding: 120px 40px;
+  background-color: white;
+}
+
+.contact-fix {
+  width: 500px;
   margin: 0 auto;
+}
+
+.contact p {
+  margin: 0 0 40px 0;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2 0px;
 }
 
-.contact form input {
-  width: 400px;
-  margin-bottom: 23px;
+.contact form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+}
+
+.contact form input,
+.contact form textarea {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 16px;
   border-radius: 6px;
-  border: 1px solid black;
-  padding: 6px 12px;
+  border: 1px solid rgb(61, 61, 61);
+  padding: 12px 14px;
   border: 1px solid rgb(179, 179, 179);
-  background-color: #e7e7e7;
+  outline-color: black;
+  resize: none;
+}
+
+.contact form textarea {
+  height: 120px;
 }
 
 .contact form button {
-  width: 100px;
-  padding: 6px 12px;
-  background-color: white;
-  color: #c42121;
-  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  background-color: #c42121;
+  color: white;
+  border-radius: 8px;
   border: 2px solid #c42121;
   cursor: pointer;
 }
 
 .contact form button:hover {
-  background-color: #c42121;
-  color: white;
+  background-color: white;
+  color: #c42121;
   transition: .5s;
 }
 
-.fix-form {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+@media screen and (max-width:1635px) {
+  .contact {
+    width: 600px;
+    margin-right: 12%;
+  }
 }
 
-.fix-form-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (max-width:830px) {
+  .contact {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
-.fix-form-2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.fix-form-2 textarea {
-  border-radius: 6px;
-  border: 1px solid rgb(179, 179, 179);
-  background-color: #e7e7e7;
-  padding: 12px 12px;
-  resize: none;
+@media screen and (max-width:600px) {
+  .contact,
+  .contact-fix {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /* ////////////// footer ////////////// */

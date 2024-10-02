@@ -69,23 +69,24 @@
 
     <section id="about" class="s-works target-section">
         <div class="row">
-            <div class="column large-full left-animation">
+            <div class="column large-full">
                 <h2 class="section-heading">Sobre nós</h2>
-            
-                <p class="lead">
-                    Antaza é uma empresa de engenharia mecânica, onde desenvolve projetos de máquinas e
-                    equipamentos para linha de ração, linha de subproduto frigorífico, sistemas de secagem
-                    e armazenamento de grãos além de serviços de laudos técnicos e inspeções.
-                </p>
-
-                <p class="lead">
-                    Uma empresa <b>eficiente</b>, com <b>produtos de qualidade</b>, <b>propósito</b> e <b>solução para grandes problemas</b>.
-                </p>
-
-                <p class="lead">
-                    Os elementos da nossa identidade foram criados com base em nossos projetos de máquinas e
-                    equipamentos e engrenagem, mostrando qual o nosso objetivo.
-                </p>
+                <div class="left-animation">
+                    <p class="lead">
+                        Antaza é uma empresa de engenharia mecânica, onde desenvolve projetos de máquinas e
+                        equipamentos para linha de ração, linha de subproduto frigorífico, sistemas de secagem
+                        e armazenamento de grãos além de serviços de laudos técnicos e inspeções.
+                    </p>
+    
+                    <p class="lead">
+                        Uma empresa <b>eficiente</b>, com <b>produtos de qualidade</b>, <b>propósito</b> e <b>solução para grandes problemas</b>.
+                    </p>
+    
+                    <p class="lead">
+                        Os elementos da nossa identidade foram criados com base em nossos projetos de máquinas e
+                        equipamentos e engrenagem, mostrando qual o nosso objetivo.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -216,32 +217,31 @@
         </div>
     </section>
 
-    <section id="contact" class="s-works target-section contact">
-        <div class="column large-full left-animation">
-            <h2 class="section-heading">Entre em contato</h2>
-        
-            <p class="lead">
-                Nos informe seu e-mail que entramos em contato com você!
-            </p>
-
-            <form>
-                <div class="fix-form">
-                    <div class="fix-form-1">
-                        <label for="">Nome ou Empresa:</label>
-                        <input type="text">
-    
-                        <label for="">E-mail:</label>
-                        <input type="text">
-                    </div>
-                    
-                    <div class="fix-form-2">
-                        <label for="">Descrição:</label>
-                        <textarea rows="5" cols="60"></textarea>
+    <section id="contact" class="contact-container">
+        <div class="contact">
+            <div class="contact-fix">
+                <h2 class="section-heading">Entre em contato</h2>
+                <div class="left-animation">
+                    <p>Nos informe seu e-mail que entramos em contato com você!</p>
+                    <div class="form-fix">
+                        <form action="" id="contact-form">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Exemplo" required>
+            
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="exemplo@gmail.com" required>
+            
+                            <label for="phone">Número</label>
+                            <input type="tel" id="phone" pattern="[0-9]{11}" placeholder="(54) 95555-5555">
+                        
+                            <label for="message">Como podemos te ajudar?</label>
+                            <textarea id="message" placeholder="Olá, gostaria de saber mais sobre..." required></textarea>
+                                
+                            <button id="contact-submit" type="submit" onclick="fakeSend()">Enviar</button>
+                        </form>
                     </div>
                 </div>
-
-                <button type="submit">Eviar</button>
-            </form>
+            </div>
         </div>
     </section>
 
