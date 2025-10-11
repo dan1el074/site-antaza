@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <title>Antaza | Site Institucional</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-color: #101010;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        main img {
+            width: 40%;
+        }
+        main span {
+            color: white;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            margin-top: 35px;
+        }
+        @media screen and (max-width:1450px) {
+            main span {
+                font-size: 18px;
+            }
+        }
+        @media screen and (max-width:970px) {
+            main span {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width:772px) {
+            main span {
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width:700px) {
+            main img {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            main {
+                padding-bottom: 100px;
+            }
+            main img {
+                width: 300px;
+            }
+        }
+    </style>
+
+    <main>
+        <img src="assets/full-logo.svg" alt="Logo da Antaza">
+        <span>Site em manutenção. Voltaremos em breve!</span>
+    </main>
+</body>
+</html>
